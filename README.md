@@ -25,3 +25,17 @@ create a train, validate, and test set from a dataframe
 ```python
 train, val, test = DSDataFrameTools(df).train_val_test_split(random_state=24)
 ```
+
+## working with Docker environment
+
+Build image from Dockerfile
+
+```shell
+docker build . -t lambdata_axel
+```
+
+Run image in container and initialize pipenv shell
+
+```shell
+docker run -it lambdata_axel pipenv shell
+```
