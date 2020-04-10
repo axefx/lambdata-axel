@@ -13,7 +13,7 @@ class DSDataFrame(pd.DataFrame):
         will check if it contains any nulls
         """
         result = self.isnull().sum()
-        print(result)
+        return result
 
     def train_val_test_split(self, random_state):
         """
